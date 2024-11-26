@@ -1,0 +1,20 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+// Program Penjumlahan 2 Bilangan
+public class Penjumlahan {
+    public static void main (String[] args) throws IOException{
+        double bilangan1, bilangan2, hasil;
+        String angka1, angka2;
+        BufferedReader bufferedReader = new BufferedReader (new InputStreamReader(System.in));
+        angka1 = bufferedReader.readLine();
+        angka2 = bufferedReader.readLine();
+        System.out.println("Masukkan Bilangan ke - 1    : ");
+        bilangan1 = Double.parseDouble(angka1);
+        System.out.println("Masukkan Bilangan ke - 2    : ");
+        bilangan2 = Double.parseDouble(angka2);
+        hasil = bilangan1 + bilangan2;
+        System.out.println("Hasilnya               : " + hasil);
+        
+    }
+}
